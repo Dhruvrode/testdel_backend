@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+      "start": "node dist/server.js"
+
   },
   "dependencies": {
     "better-sqlite3": "^12.6.2",

@@ -16,16 +16,16 @@ app.use(express.json());
 
 
 
-const PORT = 4000;
+const PORT = process.env.PORT || 8080;
 
 async function start() {
   await connectMongo();
   await seedLabels();
   await seedOrders()
 
-  app.listen(PORT, () => {
-    console.log(`🚀 Backend running on http://localhost:${PORT}`);
-  });
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 }
 
 start();
