@@ -3,8 +3,8 @@ import cors from "cors";
 import dotenv from "dotenv";
 import routes from "./routes/index";
 import { connectMongo } from "./db/mongo";
-import { seedLabels } from "../seed/seedLabels";
-import { seedOrders } from "../seed/seedOrders";
+import { seedLabels } from "./seed/seedLabels";
+import { seedOrders } from "./seed/seedOrders";
  
 
 dotenv.config();
