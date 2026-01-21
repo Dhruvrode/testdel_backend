@@ -1,5 +1,6 @@
-import { Label } from "../src/models/label.model";
+import { Label } from "../models/label.model";
 
+ 
 export async function seedLabels() {
   const exists = await Label.countDocuments();
   if (exists > 0) return;
