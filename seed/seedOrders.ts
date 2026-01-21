@@ -1,5 +1,5 @@
-import { Order } from "../models/order.model";
-import { ORDER_STATUS } from "../models/order.model";
+import { Order } from "../src/models/order.model";
+import { ORDER_STATUS } from "../src/models/order.model";
 
 export async function seedOrders() {
   const exists = await Order.countDocuments();
